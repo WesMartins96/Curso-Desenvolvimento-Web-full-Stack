@@ -1,0 +1,23 @@
+.name{
+    background: url(./assets/backgorund.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    font-family: Fira Code;
+    margin: 20px;
+    padding: 20px;
+    font-size: 22px;
+    font-style: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-style: normal;
+}
+
+#insta{
+    margin-top: 20px;
+}
+
