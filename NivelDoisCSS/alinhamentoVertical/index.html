@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+
+        .card{
+            width: 400px;
+            height: 200px;
+            border: 2px solid green;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+
+        /*Assim é um exemplo de como centralizar um elemento verticalmente com CSS*/
+        .c1{
+            
+            line-height: 200px;
+        }
+
+        /*Outro exemplo de como centralizar um elemento verticalmente com CSS usando position*/
+        .c2{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+        }
+
+        /*centralizando usando padding*/
+        .card2{
+            clear: left;
+            border: 1px solid rebeccapurple;
+            float: left;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <div class="c1">
+            Wesley Martins
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            Wesley Martins
+        </div>
+    </div>
+
+    <!--Usando padding para alinhar-->
+    <div class="card2">
+        <div style="background-color: red;">
+            Wesley Martins
+        </div>
+    </div>
+
+</body>
+</html>

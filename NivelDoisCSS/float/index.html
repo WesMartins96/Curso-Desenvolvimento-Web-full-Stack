@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Horizontal usando float</title>
+
+    <style>
+
+        #img1{
+            float: left;
+        }
+        #img2{
+            float: right;
+        }
+
+        p{
+            /*clear elimina o efeito do float*/
+            clear: both;
+        }
+
+        div{
+            border: 1px solid black;
+            overflow: auto;
+            padding: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--float é uma propriedade que permite deixar flutuando, por exemplo trabalhando com imagens-->
+    <div>
+        <img id="img1" src="./assets/Insta.png">
+        <img id="img2" src="./assets/Youtube.png">
+        <p>Qualquer texto Qualquer texto Qualquer texto Qualquer textoQualquer texto Qualquer texto Qualquer texto Qualquer texto
+            Qualquer texto Qualquer texto Qualquer texto Qualquer texto Qualquer textoQualquer textoQualquer textoQualquer texto
+            Qualquer texto Qualquer texto
+        </p>
+    </div>
+</body>
+</html>
