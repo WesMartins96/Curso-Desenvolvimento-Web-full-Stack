@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript - Eventos (DOM Events)</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <!--Atributo que dispara um evento-->
+    <h1 onclick="alert('Parabêns, evento realizado')">Evento de Clique</h1>
+
+    <!--Um Evento de clique criado a partir de uma função-->
+    <h1 onclick="cliqueAqui()">Evento de clique por função</h1>
+
+
+
+    <!--Evento que tem como principal função mudar quando sai do fóco-->
+    <input type="text" onchange="changeAqui(this)">
+
+
+    <div onclick="hideH1()">click</div>
+
+</body>
+</html>

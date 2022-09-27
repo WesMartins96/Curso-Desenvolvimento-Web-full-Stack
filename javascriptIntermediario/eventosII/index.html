@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Javascript - EventosII (DOM Events)</title>
+</head>
+
+<!--Evento onLoad() ele é executado após toda a pagina ser carregada-->  
+<body onload="alert('Página carregada, Bem Vindo!')">
+    <script src="script.js"></script>
+
+    <img src="./assets/backgorund.png" alt="img aula">
+    <br>
+    <div>Click</div>
+
+
+    <!--onmouseover, modificar o background do botão assim que o mouse for passado por cima dele-->
+    <!--onmouseout, faz com que ao retirar o mouse de cima ele faça o que queremos na função-->
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Mouse Over</div>
+  
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+
+div{
+    display: inline-block;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: cadetblue;
+    color: aliceblue;
+    margin: 5px;
+    border-radius: 5px;
+}
