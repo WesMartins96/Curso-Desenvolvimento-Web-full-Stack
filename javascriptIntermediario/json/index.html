@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Json</title>
+
+    <!--JSON é a representação e um objeto-->
+        <!--Java Script Object Notation-->
+    <script>
+
+        let aluno = {
+            nome:"Wesley Martins",
+            nota: 8.5
+        }
+
+        //Metodos JSON
+        //stringify - pega um objeto JSON e transforma em string
+        //parse - pega uma string e tenta transforma-lá em um objeto JSON
+
+        let b = JSON.stringify(aluno);
+        console.log(aluno);
+
+        //stringify
+        console.log(b);
+
+        let p = '{"nome":"Gael", "nota":9.5}';
+
+        let p2 = JSON.parse(p);
+        console.log(p);
+
+        //parse
+        console.log(p2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

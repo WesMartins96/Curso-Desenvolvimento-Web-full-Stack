@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Local Storage</title>
+
+    <style>
+        h1{
+            font-family: Fira Code;
+            font-size: 16px;
+        }
+
+        input{
+            border: 2px solid cornflowerblue;
+            border-radius: 8%;
+        }
+
+    </style>
+
+    <script>
+
+        // Grava um dado na memoria do navegador
+                              // deverá ter dois argumentos
+        //localStorage.setItem("nome", "Wesley");
+
+        // Ele pega o dado da memoria
+        //var ls = localStorage.getItem("nome");
+        //console.log(ls)
+
+        // Ele apaga o dado da memoria do navegador
+        //localStorage.removeItem("nome");
+
+        //para apagar tudo
+        //localStorage.clear();
+
+        onload = function(){
+            let nome = localStorage.getItem("nome");
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = nome;
+        }
+        
+        function atualizar(elemento){
+            let valor = elemento.value;
+            console.log(valor)
+
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = valor;
+
+            //para manter a ação gravada (persistencia de dados)
+            localStorage.setItem("nome", valor);
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+
+
+</body>
+</html>
