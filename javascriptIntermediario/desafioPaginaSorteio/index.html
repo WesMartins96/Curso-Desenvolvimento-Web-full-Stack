@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Página de Sorteio</title>
+
+    <script>
+
+        //pessoas que compraram a rifa
+        let pessoas = [
+            "Wesley",
+            "Beatriz",
+            "Gael",
+            "Duda",
+            "Luan",
+            "Fofinha"
+        ]
+
+        function sortear(){
+
+            let qtdPessoas = pessoas.length;
+            let numSorteado = Math.floor(Math.random() * qtdPessoas);
+
+            document.getElementById("display").innerHTML = pessoas[numSorteado];
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <h1 id="display"></h1>
+    <button onclick="sortear()">Sortear</button>
+
+</body>
+</html>
