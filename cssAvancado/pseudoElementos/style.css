@@ -1,0 +1,43 @@
+/*
+Pseudo Elementos são alguns comandos que permitem modificar o estilo 
+de apenas uma parte dos elementos
+*/
+
+
+/*first-line ele define o estilo apenas da primeira linha do elemento*/
+p::first-line{
+    color:cornflowerblue
+}
+
+
+/*first-letter ele define o estilo apenas da primeira letra do elemento*/
+h1::first-letter{
+    font-size: 5rem;
+    color: blue;
+}
+
+li{
+    /*margin-left: 200px;
+    list-style-image: url(./img/arrow.jpg);*/
+    list-style: none;
+}
+
+/*before permite colocar um conteudo antes do elemento*/
+li::before{
+    content: '';
+    color:violet;
+    font-size: 20px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*selection define um estilo para o texto selecionado na pagina*/
+p::selection{
+    background-color: yellow;
+    color: black;
+}

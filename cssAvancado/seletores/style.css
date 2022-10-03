@@ -1,0 +1,18 @@
+/*Seletores são maneiras de selecionar algum elemento*/
+
+
+/*usando o seletor "*" ele seleciona todos os elementos da pagina*/
+*{
+    background-color:cadetblue;
+    color:antiquewhite;
+}
+
+/*Podemos misturar os seletores para termos resultados que queremos*/
+.t6, h2{
+    font-size: 22px;
+    font-family: "Fira Code";
+    color: firebrick;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 2px;
+}
