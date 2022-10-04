@@ -1,0 +1,32 @@
+/*Order só funciona se estivermos usando o display flex,
+serve para modificar a ordem do elemento
+*/
+.container{
+    display: flex;
+
+    background-color: darkcyan;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+    font-family: "Fira Code";
+    border: 1px solid black;
+}
+
+.r1{
+    order: 2;
+    background-color: burlywood;
+}
+
+.r2{
+    order: -1;
+    background-color: brown;
+}
+
+.r3{
+    background-color: crimson;
+}
+
+.rect{
+    width: 200px;
+    height: 200px;
+}
