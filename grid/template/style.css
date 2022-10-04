@@ -1,0 +1,31 @@
+/*
+Grid é parecido com o flexbox, porem devemos definir o template dessa grid, linhas e colunas
+*/
+
+.container{
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Fira Code";
+
+    padding: 10px;
+    background-color: rgb(21, 59, 71);
+    /*assim que se define uma grid em css*/
+    display: grid;
+
+    /*nesse exemplo cada "auto" é a quantidade de cada elemento,
+    2 linhas, 3 colunas*/
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+.r1{
+    background-color: darkblue;
+}
+
+.r2{
+    background-color: firebrick;
+}
+
+.r3{
+    background-color: green;
+}
