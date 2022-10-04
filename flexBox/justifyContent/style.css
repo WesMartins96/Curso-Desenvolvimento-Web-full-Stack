@@ -1,0 +1,49 @@
+/*FlexBox, com ele da pra fazer 
+adaptações na tela, criando um designer flexivel a qualquer tamanho de tela
+*/
+
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+
+    /*Justify Content permite algumas opções de modificação do elemento*/
+    /*
+    Esses abaixo são as opções possíveis:
+        justify-content: flex-start | 
+        flex-end | center | 
+        space-between | space-around | 
+        space-evenly | start | end | left
+
+        align-items: stretch | flex-start | 
+        flex-end | center | baseline | 
+        first baseline | last baseline | 
+        start | end | self-start | self-end
+    */
+    justify-content: center;
+    align-items: center;
+
+    background-color: beige;
+    border: 1px solid black;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 200px;
+    height: 200px;
+}

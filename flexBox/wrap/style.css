@@ -1,0 +1,36 @@
+/*FlexBox, com ele da pra fazer 
+adaptações na tela, criando um designer flexivel a qualquer tamanho de tela
+*/
+
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+
+    /*flex-wrap ele tenta proteger o tamanho do nosso elemento, criando um cenario responsivo */
+    flex-wrap: wrap;
+
+    background-color: beige;
+    border: 1px solid black;
+    height: 400px;
+    color: white;
+    font-size: 20px;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 200px;
+    height: 200px;
+}
