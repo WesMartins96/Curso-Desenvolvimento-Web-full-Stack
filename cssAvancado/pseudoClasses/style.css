@@ -1,0 +1,25 @@
+/*
+Pseudo Classes são estilos de seletores, 
+conseguimos selecionar um elemento baseado em uma caracteristica dele
+*/
+
+/*focus só quando o elemento esta em foco*/
+input:focus{
+    color: aqua;
+}
+
+li{
+    list-style: none;
+    font-family: "Fira Code";
+    font-size: 30px;
+}
+
+/*first-child ele pega apenas o primeiro elemento filho*/
+li:first-child{
+    color: blueviolet;
+}
+
+/*first-of-type pega o primeiro do seu tipo*/
+li:first-of-type{
+    color: chocolate;
+}
