@@ -1,0 +1,28 @@
+
+/*Para usar delay no css é assim:*/
+
+/*Mudança de cor e tamanho*/
+@keyframes changeColor{
+
+    0% {background-color: red; width: 100px;}
+    25% {background-color: green;}
+    50% {background-color: yellow; width: 400px;}
+    100% {background-color: blue; width: 200px;}
+}
+
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+
+    /*para chamar a keyframe para animar e personalizar*/
+    animation-name: changeColor;
+    animation-duration: 10s;
+
+    /*para chamar o delay*/
+    animation-delay: 2s;
+}
+
+
