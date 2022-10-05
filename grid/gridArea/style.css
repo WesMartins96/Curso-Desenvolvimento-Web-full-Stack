@@ -1,0 +1,58 @@
+/*
+Grid é parecido com o flexbox, porem devemos definir o template dessa grid, linhas e colunas
+*/
+
+.container{
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Fira Code";
+
+    padding: 10px;
+    background-color: rgb(21, 59, 71);
+    
+
+    /*grid template sendo alocado e personalizado*/
+    display: grid;
+    grid-template-areas: "a2 a2 a2 a2 a2 a2"   
+                         "a1 a1 a3 a3 a3 a3"
+                         "a1 a1 a5 a4 a4 a4"
+                         "a6 a6 a6 a6 a6 a6"
+
+}
+
+.r1{
+    background-color: darkblue;
+}
+
+.r2{
+    background-color: firebrick;
+}
+
+.r3{
+    background-color: green;
+}
+
+/*grid area sendo aplicado no css*/
+.item1{
+    grid-area: a1;
+}
+
+.item2{
+    grid-area: a2;
+}
+
+.item3{
+    grid-area: a3;
+}
+
+.item4{
+    grid-area: a4;
+}
+
+.item5{
+    grid-area: a5;
+}
+
+.item6{
+    grid-area: a6;
+}
