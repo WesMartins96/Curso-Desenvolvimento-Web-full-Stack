@@ -1,0 +1,31 @@
+/*Transitions*/
+
+
+
+.btn{
+
+    display: inline-block;
+    padding: 20px;
+    color: #FFF;
+    font-size: 30px;
+    background-color: #426BCA;
+
+    border-radius: 8px;
+
+
+    /*para realizar uma transição mais suave nas cores e tamanho*/
+    transition-property: background-color, padding;
+    transition-duration: 500ms;
+    transition-delay: 100ms;
+
+    
+}
+
+
+.btn:hover{
+    background-color: #2248CA;
+
+    /*para realizar a transição do tamanho do botão*/
+    padding-left: 30px;
+    padding-right: 30px;
+}

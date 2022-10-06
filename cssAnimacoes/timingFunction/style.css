@@ -1,0 +1,48 @@
+
+/*Timing Function*/
+
+@keyframes move{
+    0% {left: 0px;}
+    100% {left: 300px;}
+}
+
+.box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+
+/*pode-se manipular o timer dos elementos para se criar animações*/
+
+.d1{
+    animation-timing-function: linear;
+}
+
+.d2{
+    animation-timing-function: ease;
+}
+
+.d3{
+    animation-timing-function: ease-in;
+}
+
+.d4{
+    animation-timing-function: ease-out;
+}
+
+.d5{
+    animation-timing-function: ease-in-out;
+}
+
+body{
+    text-align: center;
+    font-family: "Fira Code";
+    font-size: 12px;
+}
