@@ -8,6 +8,7 @@ const ICON = "icon";
 startGame();
 
 function startGame(){
+    
     initializeCards(game.createCardsFromTechs());
 }
 

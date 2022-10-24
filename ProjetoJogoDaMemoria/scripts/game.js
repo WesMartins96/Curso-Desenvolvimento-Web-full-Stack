@@ -25,8 +25,10 @@ let game = {
             this.cards.push(this.createPairFromTech(tech));
         })
 
-        return this.cards.flatMap(pair => pair);
+        this.cards = this.cards.flatMap(pair => pair);
         this.shuffleCards();
+
+        return this.cards;
 
         
     },
@@ -48,6 +50,8 @@ let game = {
     createIdWithTech: function(tech){
         return tech + parseInt(Math.random() * 1000);
     },
+
+    
 
     shuffleCards: function (cards){
 
