@@ -2,6 +2,19 @@
 
 let game = {
 
+    lockMode : false,
+    firstCard : null,
+    secondCard : null,
+
+    setCard: function(id){
+
+        let card = this.cards.filter(card => card.id === id)[0];
+
+        if(card.flipped){
+            return false;
+        }
+    },
+
     techs: [
         'bootstrap',
         'css',
