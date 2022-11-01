@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery - Eventos</title>
+
+    <style>
+        body{
+            font-family: "Fira Code";
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">Jquery [click]</h1>
+    <h1 class="titulo1">Jquery [mouseenter]</h1>
+    <h1 class="titulo3">Jquery [dblclick]</h1>
+   
+
+    <!--Instação do jquery no projeto-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        $(".titulo").click(() => {
+            alert("Você clicou e uma ação Jquery foi ativada")
+        })
+
+        $(".titulo1").mouseenter(() => {
+            alert("Você passou por cima da mensagem e uma ação Jquery foi ativada")
+        })
+
+        $(".titulo3").dblclick(() => {
+            alert("Você clicou duas vezes e uma mensagem Jquery foi ativado")
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery - Introdução</title>
+</head>
+<body>
+
+    <h1>Esse é um Título h1</h1>
+
+    <h1 class="titulo">Outro Título h1</h1>
+    
+
+    <!--Instação do jquery no projeto-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        // $ é o simbolo do jquery
+        // usando $() dentro dos parenteses fica o seletor, funciona como no css
+        $(".titulo").hide();
+
+        setTimeout(() => {
+            $(".titulo").show();
+        }, 2000);
+
+    </script>
+</body>
+</html>
