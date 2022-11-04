@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery - Callback</title>
+    <style>
+        #vermelho{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: none;
+            position: absolute;
+        }
+
+        #verde{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="button">hide</button>
+
+    <div id="verde"></div>
+    <div id="vermelho"></div>
+
+
+    <!--Instação do jquery no projeto-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+        //function callback é realizado após o .hide, o console.log só é chamado após a ação dos 
+        //segundos serem finalizados, respeitando a finalização da ação.
+
+        //Exemplo 1 de como usar callback
+        /*$("#button").click(() => {
+            $("#verde").hide(2000, function callback(){
+                console.log("Verde escondido");
+            });    
+        })*/
+
+        //exemplo 2 usando callback
+        $("#button").click(() => {
+            $("#verde").hide(2000, function callback(){
+                $("#vermelho").show(2000);
+            })
+        })
+
+    </script>
+</body>
+</html>
