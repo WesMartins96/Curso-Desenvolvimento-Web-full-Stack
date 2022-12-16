@@ -38,3 +38,6 @@ console.log("Seu nivel de vida é: " + rpg);
 
 rpg = poder(20, 2);
 console.log("Seu nivel de Magia é: " + rpg);
+
+console.log("1" + 2 + 4);
+console.log(5 + 4 + "3");
