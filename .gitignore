@@ -1,4 +1,5 @@
 node/node_modules
-node/node_modules
 
 express/instalacaoExpress/node_modules
+express/get/node_modules
+express/postPutDelete/node_modules
