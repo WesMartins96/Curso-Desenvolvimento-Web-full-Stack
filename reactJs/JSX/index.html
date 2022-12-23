@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS - Usando JSX</title>
+</head>
+<body>
+    
+    <div id="root">
+
+    </div>
+
+
+    
+    
+    <!-- Instalação do ReactJS (sem comando) usa-se os dois scripts abaixo -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    
+    <!-- Instalação do Babel para utilização do JSX-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+   
+   <script type="text/babel">
+
+        const root = document.querySelector("#root");
+
+        // Usando o Babel - JSX - facilitador de código javascript
+        ReactDOM.render(<div>
+                            <h1 id="Titulo Principal">Hello World</h1>
+                            <h2 id="Titulo complementar">Subtitulo</h2>
+                        </div>, root)  
+
+    </script>
+
+</body>
+</html>

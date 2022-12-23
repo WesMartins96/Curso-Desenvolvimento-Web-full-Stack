@@ -1,0 +1,5 @@
+Babel ► é uma ferramenta que vai transformar seu código Javascript criada 
+em uma determinada versão, pra uma versão que é compativel pra todos os 
+navegadores, ou seja (ES Mais atualizdo).
+
+mais Info ► https://babeljs.io/
