@@ -1,17 +1,18 @@
 import React from "react";
 
+import Menu from "./Menu"
+
 import './App.css';
 
-function Header() {
+function Header(props) {
     return (
         <header className="header">
-            <h1>Wesley Martins</h1>
-            <ul className="menu">
-                <li>Sobre Mim</li>
-                <li>Contato</li>
-                <li>Projetos</li>
-            </ul>
+            <h1>{props.name}</h1>
+            <Menu links={props.links}></Menu>
         </header>);
 }
+
+//Components são criados com a primeira letra MAIUSCULAS
+
 
 export default Header;
