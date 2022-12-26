@@ -19,7 +19,7 @@ function App() {
         setShow(false)
       }
     }, 1000)
-  }, [])
+  }, [time])
 
 
 
