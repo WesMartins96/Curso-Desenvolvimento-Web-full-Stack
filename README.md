@@ -60,3 +60,7 @@
 <h3 align="center">Projeto Workshop</h3>
 
 ![resultadoProjetoWorkshop](https://user-images.githubusercontent.com/87132093/209702176-ab1ec902-9d0c-4c0e-a504-11cea099fef3.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 77bd335ca2157f9ed9dc2b1e20773f9615cb19f4
